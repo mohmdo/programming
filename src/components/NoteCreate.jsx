@@ -1,8 +1,12 @@
+import { useContext } from "react";
+import NoteContext from "../context/NoteContext";
+
 const NoteCreate = () => {
+  const context = useContext(NoteContext);
   return (
     <div className="card mb-4">
       <div className="card-body">
-        <form id="noteForm">
+        <form id="noteForm" onSubmit={context.handleCreate}>
           <div className="form-row">
             <div className="col">
               <input
@@ -10,7 +14,8 @@ const NoteCreate = () => {
                 id="noteTitle"
                 className="form-control"
                 placeholder="Note title"
-                required
+                value={context.getTitle}
+                onChange={e=>context.setTitle(e.target.value)}
               />
             </div>
             <div className="col">
@@ -19,7 +24,8 @@ const NoteCreate = () => {
                 id="noteDescription"
                 className="form-control"
                 placeholder="Note description"
-                required
+                value={context.getBody}
+                onChange={e=>context.setBody(e.target.value)}
               />
             </div>
             <div className="col-auto">
