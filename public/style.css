@@ -1,0 +1,60 @@
+/* style.css */
+
+/* عمومی */
+body {
+    background-color: #f8f9fa;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* گرد کردن کارت */
+  }
+  
+  /* افزودن فاصله بین آیتم‌های لیست و گرد کردن */
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px; /* گرد کردن آیتم‌های لیست */
+    margin-bottom: 10px; /* افزودن فاصله بین آیتم‌ها */
+    background-color: #ffffff; /* رنگ پس‌زمینه سفید برای وضوح بهتر */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* افزودن سایه کوچک */
+  }
+  
+  /* اعمال گرد کردن برای اینپوت‌ها و دکمه‌ها */
+  .form-control {
+    border-radius: 10px; /* گرد کردن اینپوت‌ها */
+  }
+  
+  button {
+    border-radius: 10px; /* گرد کردن دکمه‌ها */
+  }
+  
+  /* استایل برای دکمه‌ها و آیکون‌های حذف */
+  .note-actions .delete-icon {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* لینک‌های فیلتر */
+  .filter-item {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .filter-item:hover {
+    text-decoration: underline;
+  }
+  
+  .filter-item span {
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  

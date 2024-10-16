@@ -1,10 +1,17 @@
+import NoteCreate from "./components/NoteCreate";
+import NoteFilter from "./components/NoteFilter";
+import Noteheader from "./components/NoteHeader";
+import NoteList from "./components/NoteList";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      Hello git
-    </div>
+    <>
+      <Noteheader />
+      <NoteFilter />
+      <NoteCreate />
+      <NoteList />
+    </>
   );
-}
+};
 
 export default App;
