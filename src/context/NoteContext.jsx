@@ -7,5 +7,10 @@ const NoteContext = createContext({
     setBody: "",
     getList: [],
     handleCreate: ()=>{},
+    handleDelete: ()=>{},
+    handleComplate: ()=>{},
+    handleAllList: ()=>{},
+    handleAllComplate: ()=>{},
+    handleFilter: ()=>{},
 });
 export default NoteContext;
